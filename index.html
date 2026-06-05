@@ -1,702 +1,885 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <link rel="stylesheet" href="design.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="design.css"/>
     <title>6p08 - Character Animation</title>
-  </head>
-
-  <lin style="background-color: azure">
-    <h2>Player</h2>
-    <table>
-      <!-- Title -->
-      <tr>
-        <th></th>
-        <th>Idle</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
-
-      <!-- Animation -->
-      <!-- ========================: Player Warrior -->
-      <tr>
-        <td><h2>Warrior</h2></td>
-        <td><img src="GIF/Player_Warrior/idle.gif" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Player Rouge -->
-      <tr>
-        <td><h2>Rouge</h2></td>
-        <td><img src="GIF/Player_Rouge/Idle.gif" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-      </tr>
-         
-      <!-- ========================: Player Mage -->
-      <tr>
-        <td><h2>Mage</h2></td>
-        <td><img src="GIF/Player_Mage/Idle.gif" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-      </tr>
-
-    </table>
-
-  </br>
-    <h2>NPC</h2>
-    <table>
-      <!-- Title -->
-      <tr>
-        <th></th>
-        <th>Idle</th>
-        <th>Happy</th>
-        <th>Sad</th>
-        <th>Angry</th>
-        <th>Special</th>
-      </tr>
-
-      <!-- Animation -->
-      <!-- ========================: Merchant -->
-      <tr>
-        <td><h2>Merchant</h2></td>
-        <td><img src="GIF/Merchant/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Merchant/happy.gif" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="GIF/Merchant/angry.gif" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-      </tr>
-
-       <!-- ========================: Collector -->
-       <tr>
-        <td><h2>Collector</h2></td>
-        <td><img src="GIF/Collector/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Collector/happy.gif" alt="Pending" /></td>
-        <td><img src="GIF/Collector/sad.gif" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-      </tr>
-
-       <!-- ========================: Blacksmith -->
-       <tr>
-        <td><h2>Blacksmith</h2></td>
-        <td><img src="GIF/Blacksmith/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Blacksmith/happy.gif" alt="Pending" /></td>
-        <td><img src="GIF/Blacksmith/sad.gif" alt="Pending" /></td>
-        <td><img src="" alt="Pending" /></td>
-        <td><img src="GIF/Blacksmith/special.gif" alt="Pending" /></td>
-      </tr>
-    </table>
-
-    </br>
-    <h2>UI</h2>
-    <table>
-      <!-- Title -->
-      <tr>
-        <th></th>
-        <th>Idle</th>
-        <th>Idle</th>
-        <th>Idle</th>
-        <th>Idle</th>
-        <th>Idle</th>
-      </tr>
-
-      <!-- Animation -->
-      <!-- ========================: Icon Chapter -->
-      <tr>
-        <td><h2>Icon Chapters</h2></td>
-        <td><img src="GIF/IconChapter/IconChapter-Tranqil_Grove-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/IconChapter/IconChapter-Ancient_Ruin-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/IconChapter/IconChapter-Goblin_Cave-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/IconChapter/IconChapter-Mushroom_Forest-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/IconChapter/IconChapter-Thunder_Mountain-Idle.gif" alt="Pending" /></td>
-      </tr>
-      
-      <tr>
-        <td><h2>Icon Chapters</h2></td>
-        <td><img src="GIF/IconChapter/IconChapter-Volcano-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/IconChapter/IconChapter-Frosty_Hollow-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/IconChapter/IconChapter-Ashen_Dunes-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/IconChapter/IconChapter-Blazing_Glacier-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/IconChapter/IconChapter-Gold_Mine-Idle.gif" alt="Pending" /></td>
-      </tr>
-
-
-      <tr>
-        <td><h2>Icon Chapters</h2></td>
-        <td><img src="GIF/IconChapter/IconChapter-Grave_Rot-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/IconChapter/IconChapter-Emerald_Cavern-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/IconChapter/IconChapter-Blight_Workshop-Idle.gif" alt="Pending" /></td>
-      </tr>
-
-    </table>
-    
-  </br>
-  <h2>Enemy</h2>
-  <table id="6p08-animation">
-    <!-- Title -->
-    <tr>
-      <th></th>
-        <th>Idle</th>
-        <th>Get Hit</th>
-        <th>Attack</th>
-        <th>Cast Spell</th>
-        <th>Dead</th>
-      </tr>
-
-      <!-- Animation -->
-      <!-- ========================: Poison Mushroom -->
-      <tr>
-          <td><h2>Poison Mushroom</h2></td>
-          <td><img src="GIF/Poison_Mushroom/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Poison_Mushroom/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Poison_Mushroom/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Poison_Mushroom/CastSpell.gif" alt="Pending" /></td>
-          <td><img src="GIF/Poison_Mushroom/Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Magma Golem - Update -->
-      <tr>
-          <td><h2>Magma Golem New</h2></td>
-          <td><img src="GIF/Magma_Golem_Update/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Magma_Golem_Update/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Magma_Golem_Update/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Magma_Golem_Update/CastSpell.gif" alt="Pending" /></td>
-          <td><img src="GIF/Magma_Golem_Update/Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Venomous Bloom -->
-      <tr>
-          <td><h2>Venomous Bloom</h2></td>
-          <td><img src="GIF/Venomous_Bloom/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Venomous_Bloom/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Venomous_Bloom/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Venomous_Bloom/CastSpell.gif" alt="Pending" /></td>
-          <td><img src="GIF/Venomous_Bloom/Dead.gif" alt="Pending" /></td>
-      </tr>
-      
-      <!-- ========================: Volt Hedgehog Defensive -->
-      <tr>
-          <td><h2>Volt Hedgehog Defensive</h2></td>
-          <td><img src="GIF/Volt_Hedgehog_Defensive/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Hedgehog_Defensive/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Hedgehog_Defensive/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Hedgehog_Defensive/CastSpell.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Hedgehog_Defensive/Dead.gif" alt="Pending" /></td>
-      </tr>
-      
-      <!-- ========================: Volt Hedgehog -->
-      <tr>
-          <td><h2>Volt Hedgehog</h2></td>
-          <td><img src="GIF/Volt_Hedgehog/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Hedgehog/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Hedgehog/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Hedgehog/CastSpell.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Hedgehog/Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Volt Snake -->
-      <tr>
-          <td><h2>Volt Snake</h2></td>
-          <td><img src="GIF/Volt_Snake/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Snake/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Snake/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Volt_Snake/CastSpell.gif" /></td>
-          <td><img src="GIF/Volt_Snake/Dead.gif" /></td>
-      </tr>
-
-      <!-- ========================: Fire Spirit -->
-      <tr>
-          <td><h2>Fire Spirit</h2></td>
-          <td><img src="GIF/Fire_Spirit/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Fire_Spirit/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Fire_Spirit/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Fire_Spirit/CastSpell.gif" /></td>
-          <td><img src="GIF/Fire_Spirit/Dead.gif" /></td>
-      </tr>
-
-      <!-- ========================: Mossling -->
-      <tr>
-          <td><h2>Mossling</h2></td>
-          <td><img src="GIF/Mossling/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Mossling/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Mossling/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Mossling/CastSpell.gif" /></td>
-          <td><img src="GIF/Mossling/Dead.gif" /></td>
-      </tr>
-
-      <!-- ========================: Ice Deer -->
-      <tr>
-          <td><h2>Ice Deer</h2></td>
-          <td><img src="GIF/Ice_Deer/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Ice_Deer/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Ice_Deer/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Ice_Deer/CastSpell.gif" /></td>
-          <td><img src="GIF/Ice_Deer/Dead.gif" /></td>
-      </tr>
-
-      <!-- ========================: Skeleton Mage -->
-      <tr>
-          <td><h2>Skeleton Mage</h2></td>
-          <td><img src="GIF/Skeleton_Mage/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Skeleton_Mage/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Skeleton_Mage/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Skeleton_Mage/CastSpell.gif" alt="Pending" /></td>
-          <td><img src="GIF/Skeleton_Mage/Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Skeleton Dog -->
-      <tr>
-          <td><h2>Skeleton Dog</h2></td>
-          <td><img src="GIF/Skeleton_Dog/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Skeleton_Dog/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Skeleton_Dog/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Skeleton_Dog/CastSpell.gif" alt="Pending" /></td>
-          <td><img src="GIF/Skeleton_Dog/Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Goblin_Assasin -->
-      <tr>
-          <td><h2>Goblin Assasin</h2></td>
-          <td><img src="GIF/Goblin_Assasin/Idle.gif" alt="Pending" /></td>
-          <td><img src="GIF/Goblin_Assasin/GetHit.gif" alt="Pending" /></td>
-          <td><img src="GIF/Goblin_Assasin/Attack.gif" alt="Pending" /></td>
-          <td><img src="GIF/Goblin_Assasin/CastSpell.gif" alt="Pending" /></td>
-          <td><img src="GIF/Goblin_Assasin/Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Snugflake -->
-      <tr>
-        <td><h2>Snugflake</h2></td>
-        <td><img src="GIF/Snugflake/Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Snugflake/GetHit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Snugflake/Attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Snugflake/CastSpell.gif" alt="Pending" /></td>
-        <td><img src="GIF/Snugflake/Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Treant -->
-      <tr>
-        <td><h2>Treant</h2></td>
-        <td><img src="GIF/Treant/Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Treant/GetHit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Treant/Attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Treant/CastSpell.gif" alt="Pending" /></td>
-        <td><img src="GIF/Treant/Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Magma Golem -->
-      <tr>
-        <td><h2>Magma Golem</h2></td>
-        <td><img src="GIF/MagmaGolem/Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/MagmaGolem/GetHit.gif" alt="Pending" /></td>
-        <td><img src="GIF/MagmaGolem/Attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/MagmaGolem/CastSpell.gif" alt="Pending" /></td>
-        <td><img src="GIF/MagmaGolem/Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Pixie -->
-      <tr>
-        <td><h2>Pixie</h2></td>
-        <td><img src="GIF/Pixie/Pixie-Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Pixie/Pixie-GetHit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Pixie/Pixie-Attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Pixie/Pixie-CastSpell.gif" alt="Pending" /></td>
-        <td><img src="GIF/Pixie/Pixie-Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Polar Bear King -->
-      <tr>
-        <td><h2>Polar Bear King</h2></td>
-        <td><img src="GIF/Polar%20Bear%20King/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Polar%20Bear%20King/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Polar%20Bear%20King/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Polar%20Bear%20King/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Polar%20Bear%20King/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Thunder Shaman -->
-      <tr>
-        <td><h2>Thunder Shaman</h2></td>
-        <td><img src="GIF/Thunder%20Shaman/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thunder%20Shaman/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thunder%20Shaman/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thunder%20Shaman/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thunder%20Shaman/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Thunder Hawk -->
-      <tr>
-        <td><h2>Thunder Hawk</h2></td>
-        <td><img src="GIF/Thunder%20Hawk/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thunder%20Hawk/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thunder%20Hawk/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thunder%20Hawk/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thunder%20Hawk/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Naga Posioner -->
-      <tr>
-        <td><h2>Naga Posioner</h2></td>
-        <td><img src="GIF/Naga%20Posioner/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Naga%20Posioner/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Naga%20Posioner/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Naga%20Posioner/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Naga%20Posioner/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Frost Wolf -->
-      <tr>
-        <td><h2>Frost Wolf</h2></td>
-        <td><img src="GIF/Frost%20Wolf/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Frost%20Wolf/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Frost%20Wolf/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Frost%20Wolf/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Frost%20Wolf/dead.gif" alt="Pending" /></td>
-      </tr>
-
-
-      <!-- ========================: Inferno Dragon -->
-      <tr>
-        <td><h2>Inferno Dragon</h2></td>
-        <td><img src="GIF/Inferno%20Dragon/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Inferno%20Dragon/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Inferno%20Dragon/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Inferno%20Dragon/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Inferno%20Dragon/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Yeti -->
-      <tr>
-        <td><h2>Yeti</h2></td>
-        <td><img src="GIF/Yeti/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Yeti/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Yeti/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Yeti/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Yeti/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Fire Elemental -->
-      <tr>
-        <td><h2>Fire Elemental</h2></td>
-        <td><img src="GIF/Fire%20Elemental/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Fire%20Elemental/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Fire%20Elemental/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Fire%20Elemental/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Fire%20Elemental/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Spider -->
-      <tr>
-        <td><h2>Spider</h2></td>
-        <td><img src="GIF/Spider/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Spider/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Spider/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Spider/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Spider/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Fire Hound -->
-      <tr>
-        <td><h2>Fire Hound</h2></td>
-        <td><img src="GIF/Fire%20Hound/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Fire%20Hound/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Fire%20Hound/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Fire%20Hound/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Fire%20Hound/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Stone Golem -->
-      <tr>
-        <td><h2>Stone Golem</h2></td>
-        <td><img src="GIF/Stone%20Golem/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Stone%20Golem/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Stone%20Golem/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Stone%20Golem/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Stone%20Golem/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Armored Guardian -->
-      <tr>
-        <td><h2>Armored Guardian</h2></td>
-        <td><img src="GIF/Armored%20Guardian/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Armored%20Guardian/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Armored%20Guardian/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Armored%20Guardian/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Armored%20Guardian/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Thief -->
-      <tr>
-        <td><h2>Thief</h2></td>
-        <td><img src="GIF/Thief/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thief/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thief/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thief/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Thief/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Zombie -->
-      <tr>
-        <td><h2>Zombie</h2></td>
-        <td><img src="GIF/Zombie/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Zombie/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Zombie/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Zombie/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Zombie/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Death Moth -->
-      <tr>
-        <td><h2>Death Moth</h2></td>
-        <td><img src="GIF/Death%20Moth/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Death%20Moth/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Death%20Moth/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Death%20Moth/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Death%20Moth/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Slime: Basic -->
-      <tr>
-        <td><h2>Slime: Basic</h2></td>
-        <td><img src="GIF/Slime%20Basic/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Basic/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Basic/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Basic/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Basic/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Slime: Fire -->
-      <tr>
-        <td><h2>Slime: Fire</h2></td>
-        <td><img src="GIF/Slime%20Fire/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Fire/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Fire/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Fire/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Fire/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Slime: Ice -->
-      <tr>
-        <td><h2>Slime: Ice</h2></td>
-        <td><img src="GIF/Slime%20Ice/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Ice/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Ice/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Ice/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Ice/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Slime: Poison -->
-      <tr>
-        <td><h2>Slime: Poison</h2></td>
-        <td><img src="GIF/Slime%20Poison/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Poison/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Poison/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Poison/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Poison/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Slime: Electric -->
-      <tr>
-        <td><h2>Slime: Electric</h2></td>
-        <td><img src="GIF/Slime%20Electric/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Electric/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Electric/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Electric/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Slime%20Electric/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Cultist -->
-      <tr>
-        <td><h2>Cultist</h2></td>
-        <td><img src="GIF/Cultist/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Cultist/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Cultist/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Cultist/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Cultist/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Mimic -->
-      <tr>
-        <td><h2>Mimic</h2></td>
-        <td><img src="GIF/Mimic/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Mimic/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Mimic/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Mimic/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Mimic/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Armored Skeleton -->
-      <tr>
-        <td><h2>Armored Skeleton</h2></td>
-        <td><img src="GIF/Armored%20Skeleton/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Armored%20Skeleton/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Armored%20Skeleton/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Armored%20Skeleton/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Armored%20Skeleton/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Electric Elemental -->
-      <tr>
-        <td><h2>Electric Elemental</h2></td>
-        <td><img src="GIF/Electric%20Elemental/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Electric%20Elemental/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Electric%20Elemental/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Electric%20Elemental/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Electric%20Elemental/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Skeleton Warior -->
-      <tr>
-        <td><h2>Skeleton Warior</h2></td>
-        <td><img src="GIF/Skeleton%20Warior/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Skeleton%20Warior/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Skeleton%20Warior/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Skeleton%20Warior/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Skeleton%20Warior/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Skeleton Archer -->
-      <tr>
-        <td><h2>Skeleton Archer</h2></td>
-        <td><img src="GIF/Skeleton%20Archer/Idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Skeleton%20Archer/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Skeleton%20Archer/attack.gif" alt="Pending" /></td>
-        <td>
-          <img src="GIF/Skeleton%20Archer/cast.gif" alt="Pending" />
-        </td>
-        <td><img src="GIF/Skeleton%20Archer/Dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Bom -->
-      <tr>
-        <td><h2>Bom</h2></td>
-        <td><img src="GIF/Bom/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Bom/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Bom/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Bom/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Bom/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Goblin Cheif -->
-      <tr>
-        <td><h2>Goblin Cheif</h2></td>
-        <td><img src="GIF/Goblin%20Cheif/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Cheif/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Cheif/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Cheif/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Cheif/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Goblin Grunt -->
-      <tr>
-        <td><h2>Goblin Grunt</h2></td>
-        <td><img src="GIF/Goblin%20Grunt/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Grunt/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Grunt/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Grunt/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Grunt/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Goblin Berserker -->
-      <tr>
-        <td><h2>Goblin Berserker</h2></td>
-        <td><img src="GIF/Goblin%20Berserker/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Berserker/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Berserker/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Berserker/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Berserker/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Goblin Brute -->
-      <tr>
-        <td><h2>Goblin Brute</h2></td>
-        <td><img src="GIF/Goblin%20Brute/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Brute/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Brute/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Brute/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Goblin%20Brute/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Giant Slime: Electric -->
-      <tr>
-        <td><h2>Giant Slime: Electric</h2></td>
-        <td>
-          <img src="GIF/Giant%20Slime%20Electric/idle.gif" alt="Pending" />
-        </td>
-        <td>
-          <img src="GIF/Giant%20Slime%20Electric/hit.gif" alt="Pending" />
-        </td>
-        <td>
-          <img src="GIF/Giant%20Slime%20Electric/attack.gif" alt="Pending" />
-        </td>
-        <td>
-          <img src="GIF/Giant%20Slime%20Electric/cast.gif" alt="Pending" />
-        </td>
-        <td>
-          <img src="GIF/Giant%20Slime%20Electric/dead.gif" alt="Pending" />
-        </td>
-      </tr>
-
-      <!-- ========================: Giant Slime: Basic -->
-      <tr>
-        <td><h2>Giant Slime: Basic</h2></td>
-        <td><img src="GIF/Giant%20Slime%20Basic/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Basic/hit.gif" alt="Pending" /></td>
-        <td>
-          <img src="GIF/Giant%20Slime%20Basic/attack.gif" alt="Pending" />
-        </td>
-        <td><img src="GIF/Giant%20Slime%20Basic/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Basic/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Giant Slime: Fire -->
-      <tr>
-        <td><h2>Giant Slime: Fire</h2></td>
-        <td><img src="GIF/Giant%20Slime%20Fire/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Fire/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Fire/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Fire/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Fire/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Giant Slime: Ice -->
-      <tr>
-        <td><h2>Giant Slime: Ice</h2></td>
-        <td><img src="GIF/Giant%20Slime%20Ice/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Ice/hit.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Ice/attack.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Ice/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Ice/dead.gif" alt="Pending" /></td>
-      </tr>
-
-      <!-- ========================: Giant Slime: Poison -->
-      <tr>
-        <td><h2>Giant Slime: Poison</h2></td>
-        <td><img src="GIF/Giant%20Slime%20Poison/idle.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Poison/hit.gif" alt="Pending" /></td>
-        <td>
-          <img src="GIF/Giant%20Slime%20Poison/attack.gif" alt="Pending" />
-        </td>
-        <td><img src="GIF/Giant%20Slime%20Poison/cast.gif" alt="Pending" /></td>
-        <td><img src="GIF/Giant%20Slime%20Poison/dead.gif" alt="Pending" /></td>
-      </tr>
-
-  </table>
-
-  </lin>
-  </body>
+</head>
+
+<body>
+<main class="page-wrapper">
+    <header class="site-header">
+        <h1>Character Animation</h1>
+        <p class="site-sub">6p08 — animation showcase</p>
+    </header>
+
+    <nav class="tabs" role="tablist">
+        <button class="tab-btn is-active" data-tab="player" role="tab">Player</button>
+        <button class="tab-btn" data-tab="enemy" role="tab">Enemy</button>
+        <button class="tab-btn" data-tab="ui" role="tab">UI</button>
+    </nav>
+
+    <section class="tab-panel is-active" id="tab-player" role="tabpanel">
+        <h2>Player</h2>
+        <table>
+            <!-- Title -->
+            <tr>
+                <th></th>
+                <th>Idle</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            <!-- Animation -->
+            <!-- ========================: Player Warrior -->
+            <tr>
+                <td><h2>Warrior</h2></td>
+                <td><img src="GIF/Player_Warrior/idle.gif" alt="Pending"/></td>
+                <td><span class="pending">Pending</span></td>
+                <td><span class="pending">Pending</span></td>
+                <td><span class="pending">Pending</span></td>
+                <td><span class="pending">Pending</span></td>
+            </tr>
+
+            <!-- ========================: Player Rouge -->
+            <tr>
+                <td><h2>Rogue</h2></td>
+                <td><img src="GIF/Player_Rouge/Idle.gif"/></td>
+                <td><span class="pending">Pending</span></td>
+                <td><span class="pending">Pending</span></td>
+                <td><span class="pending">Pending</span></td>
+                <td><span class="pending">Pending</span></td>
+            </tr>
+
+            <!-- ========================: Player Mage -->
+            <tr>
+                <td><h2>Mage</h2></td>
+                <td><img src="GIF/Player_Mage/Idle.gif"/></td>
+                <td><span class="pending">Pending</span></td>
+                <td><span class="pending">Pending</span></td>
+                <td><span class="pending">Pending</span></td>
+                <td><span class="pending">Pending</span></td>
+            </tr>
+
+        </table>
+
+
+        <h2>NPC</h2>
+        <table>
+            <!-- Title -->
+            <tr>
+                <th></th>
+                <th>Idle</th>
+                <th>Happy</th>
+                <th>Sad</th>
+                <th>Angry</th>
+                <th>Special</th>
+            </tr>
+
+            <!-- Animation -->
+            <!-- ========================: Merchant -->
+            <tr>
+                <td><h2>Merchant</h2></td>
+                <td><img src="GIF/Merchant/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Merchant/happy.gif" alt="Pending"/></td>
+                <td><span class="pending">Pending</span></td>
+                <td><img src="GIF/Merchant/angry.gif" alt="Pending"/></td>
+                <td><span class="pending">Pending</span></td>
+            </tr>
+
+            <!-- ========================: Collector -->
+            <tr>
+                <td><h2>Collector</h2></td>
+                <td><img src="GIF/Collector/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Collector/happy.gif" alt="Pending"/></td>
+                <td><img src="GIF/Collector/sad.gif" alt="Pending"/></td>
+                <td><span class="pending">Pending</span></td>
+                <td><span class="pending">Pending</span></td>
+            </tr>
+
+            <!-- ========================: Blacksmith -->
+            <tr>
+                <td><h2>Blacksmith</h2></td>
+                <td><img src="GIF/Blacksmith/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Blacksmith/happy.gif" alt="Pending"/></td>
+                <td><img src="GIF/Blacksmith/sad.gif" alt="Pending"/></td>
+                <td><span class="pending">Pending</span></td>
+                <td><img src="GIF/Blacksmith/special.gif" alt="Pending"/></td>
+            </tr>
+        </table>
+
+
+    </section>
+
+    <section class="tab-panel" id="tab-ui" role="tabpanel">
+        <h2>UI</h2>
+        <p class="section-note">Icon Chapters — Idle</p>
+        <div class="icon-grid">
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Tranqil_Grove-Idle.gif" alt="Tranquil Grove"/></div>
+                <figcaption>Tranquil Grove</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Ancient_Ruin-Idle.gif" alt="Ancient Ruin"/></div>
+                <figcaption>Ancient Ruin</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Goblin_Cave-Idle.gif" alt="Goblin Cave"/></div>
+                <figcaption>Goblin Cave</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Mushroom_Forest-Idle.gif" alt="Mushroom Forest"/></div>
+                <figcaption>Mushroom Forest</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Thunder_Mountain-Idle.gif" alt="Thunder Mountain"/></div>
+                <figcaption>Thunder Mountain</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Volcano-Idle.gif" alt="Volcano"/></div>
+                <figcaption>Volcano</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Frosty_Hollow-Idle.gif" alt="Frosty Hollow"/></div>
+                <figcaption>Frosty Hollow</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Ashen_Dunes-Idle.gif" alt="Ashen Dunes"/></div>
+                <figcaption>Ashen Dunes</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Blazing_Glacier-Idle.gif" alt="Blazing Glacier"/></div>
+                <figcaption>Blazing Glacier</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Gold_Mine-Idle.gif" alt="Gold Mine"/></div>
+                <figcaption>Gold Mine</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Grave_Rot-Idle.gif" alt="Grave Rot"/></div>
+                <figcaption>Grave Rot</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Emerald_Cavern-Idle.gif" alt="Emerald Cavern"/></div>
+                <figcaption>Emerald Cavern</figcaption>
+            </figure>
+            <figure class="icon-card">
+                <div class="thumb"><img src="GIF/IconChapter/IconChapter-Blight_Workshop-Idle.gif" alt="Blight Workshop"/></div>
+                <figcaption>Blight Workshop</figcaption>
+            </figure>
+        </div>
+
+
+    </section>
+
+    <section class="tab-panel" id="tab-enemy" role="tabpanel">
+        <h2>Enemy</h2>
+        <table id="6p08-animation">
+            <!-- Title -->
+            <tr>
+                <th></th>
+                <th>Idle</th>
+                <th>Get Hit</th>
+                <th>Attack</th>
+                <th>Cast Spell</th>
+                <th>Dead</th>
+            </tr>
+
+            <!-- Animation -->
+            <!-- ========================: Poison Mushroom -->
+            <tr>
+                <td><h2>Poison Mushroom</h2></td>
+                <td><img src="GIF/Poison_Mushroom/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Poison_Mushroom/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Poison_Mushroom/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Poison_Mushroom/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Poison_Mushroom/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Magma Golem - Update -->
+            <tr>
+                <td><h2>Magma Golem New</h2></td>
+                <td><img src="GIF/Magma_Golem_Update/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Magma_Golem_Update/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Magma_Golem_Update/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Magma_Golem_Update/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Magma_Golem_Update/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Venomous Bloom -->
+            <tr>
+                <td><h2>Venomous Bloom</h2></td>
+                <td><img src="GIF/Venomous_Bloom/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Venomous_Bloom/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Venomous_Bloom/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Venomous_Bloom/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Venomous_Bloom/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Volt Hedgehog Defensive -->
+            <tr>
+                <td><h2>Volt Hedgehog Defensive</h2></td>
+                <td><img src="GIF/Volt_Hedgehog_Defensive/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Volt_Hedgehog_Defensive/GetHit.gif" alt="Pending"/></td>
+                <td><span class="pending">Pending</span></td>
+                <td><img src="GIF/Volt_Hedgehog_Defensive/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Volt_Hedgehog_Defensive/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Volt Hedgehog -->
+            <tr>
+                <td><h2>Volt Hedgehog</h2></td>
+                <td><img src="GIF/Volt_Hedgehog/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Volt_Hedgehog/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Volt_Hedgehog/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Volt_Hedgehog/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Volt_Hedgehog/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Volt Snake -->
+            <tr>
+                <td><h2>Volt Snake</h2></td>
+                <td><img src="GIF/Volt_Snake/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Volt_Snake/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Volt_Snake/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Volt_Snake/CastSpell.gif"/></td>
+                <td><img src="GIF/Volt_Snake/Dead.gif"/></td>
+            </tr>
+
+            <!-- ========================: Fire Spirit -->
+            <tr>
+                <td><h2>Fire Spirit</h2></td>
+                <td><img src="GIF/Fire_Spirit/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire_Spirit/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire_Spirit/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire_Spirit/CastSpell.gif"/></td>
+                <td><img src="GIF/Fire_Spirit/Dead.gif"/></td>
+            </tr>
+
+            <!-- ========================: Mossling -->
+            <tr>
+                <td><h2>Mossling</h2></td>
+                <td><img src="GIF/Mossling/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Mossling/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Mossling/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Mossling/CastSpell.gif"/></td>
+                <td><img src="GIF/Mossling/Dead.gif"/></td>
+            </tr>
+
+            <!-- ========================: Ice Deer -->
+            <tr>
+                <td><h2>Ice Deer</h2></td>
+                <td><img src="GIF/Ice_Deer/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Ice_Deer/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Ice_Deer/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Ice_Deer/CastSpell.gif"/></td>
+                <td><img src="GIF/Ice_Deer/Dead.gif"/></td>
+            </tr>
+
+            <!-- ========================: Skeleton Mage -->
+            <tr>
+                <td><h2>Skeleton Mage</h2></td>
+                <td><img src="GIF/Skeleton_Mage/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton_Mage/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton_Mage/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton_Mage/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton_Mage/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Skeleton Dog -->
+            <tr>
+                <td><h2>Skeleton Dog</h2></td>
+                <td><img src="GIF/Skeleton_Dog/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton_Dog/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton_Dog/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton_Dog/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton_Dog/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Goblin_Assasin -->
+            <tr>
+                <td><h2>Goblin Assassin</h2></td>
+                <td><img src="GIF/Goblin_Assasin/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin_Assasin/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin_Assasin/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin_Assasin/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin_Assasin/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Snugflake -->
+            <tr>
+                <td><h2>Snugflake</h2></td>
+                <td><img src="GIF/Snugflake/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Snugflake/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Snugflake/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Snugflake/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Snugflake/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Treant -->
+            <tr>
+                <td><h2>Treant</h2></td>
+                <td><img src="GIF/Treant/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Treant/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Treant/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Treant/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Treant/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Magma Golem -->
+            <tr>
+                <td><h2>Magma Golem</h2></td>
+                <td><img src="GIF/MagmaGolem/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/MagmaGolem/GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/MagmaGolem/Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/MagmaGolem/CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/MagmaGolem/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Pixie -->
+            <tr>
+                <td><h2>Pixie</h2></td>
+                <td><img src="GIF/Pixie/Pixie-Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Pixie/Pixie-GetHit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Pixie/Pixie-Attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Pixie/Pixie-CastSpell.gif" alt="Pending"/></td>
+                <td><img src="GIF/Pixie/Pixie-Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Polar Bear King -->
+            <tr>
+                <td><h2>Polar Bear King</h2></td>
+                <td><img src="GIF/Polar%20Bear%20King/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Polar%20Bear%20King/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Polar%20Bear%20King/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Polar%20Bear%20King/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Polar%20Bear%20King/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Thunder Shaman -->
+            <tr>
+                <td><h2>Thunder Shaman</h2></td>
+                <td><img src="GIF/Thunder%20Shaman/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thunder%20Shaman/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thunder%20Shaman/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thunder%20Shaman/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thunder%20Shaman/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Thunder Hawk -->
+            <tr>
+                <td><h2>Thunder Hawk</h2></td>
+                <td><img src="GIF/Thunder%20Hawk/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thunder%20Hawk/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thunder%20Hawk/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thunder%20Hawk/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thunder%20Hawk/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Naga Posioner -->
+            <tr>
+                <td><h2>Naga Poisoner</h2></td>
+                <td><img src="GIF/Naga%20Posioner/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Naga%20Posioner/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Naga%20Posioner/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Naga%20Posioner/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Naga%20Posioner/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Frost Wolf -->
+            <tr>
+                <td><h2>Frost Wolf</h2></td>
+                <td><img src="GIF/Frost%20Wolf/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Frost%20Wolf/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Frost%20Wolf/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Frost%20Wolf/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Frost%20Wolf/dead.gif" alt="Pending"/></td>
+            </tr>
+
+
+            <!-- ========================: Inferno Dragon -->
+            <tr>
+                <td><h2>Inferno Dragon</h2></td>
+                <td><img src="GIF/Inferno%20Dragon/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Inferno%20Dragon/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Inferno%20Dragon/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Inferno%20Dragon/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Inferno%20Dragon/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Yeti -->
+            <tr>
+                <td><h2>Yeti</h2></td>
+                <td><img src="GIF/Yeti/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Yeti/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Yeti/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Yeti/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Yeti/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Fire Elemental -->
+            <tr>
+                <td><h2>Fire Elemental</h2></td>
+                <td><img src="GIF/Fire%20Elemental/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire%20Elemental/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire%20Elemental/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire%20Elemental/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire%20Elemental/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Spider -->
+            <tr>
+                <td><h2>Spider</h2></td>
+                <td><img src="GIF/Spider/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Spider/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Spider/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Spider/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Spider/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Fire Hound -->
+            <tr>
+                <td><h2>Fire Hound</h2></td>
+                <td><img src="GIF/Fire%20Hound/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire%20Hound/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire%20Hound/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire%20Hound/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Fire%20Hound/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Stone Golem -->
+            <tr>
+                <td><h2>Stone Golem</h2></td>
+                <td><img src="GIF/Stone%20Golem/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Stone%20Golem/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Stone%20Golem/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Stone%20Golem/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Stone%20Golem/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Armored Guardian -->
+            <tr>
+                <td><h2>Armored Guardian</h2></td>
+                <td><img src="GIF/Armored%20Guardian/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Armored%20Guardian/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Armored%20Guardian/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Armored%20Guardian/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Armored%20Guardian/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Thief -->
+            <tr>
+                <td><h2>Thief</h2></td>
+                <td><img src="GIF/Thief/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thief/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thief/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thief/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Thief/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Zombie -->
+            <tr>
+                <td><h2>Zombie</h2></td>
+                <td><img src="GIF/Zombie/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Zombie/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Zombie/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Zombie/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Zombie/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Death Moth -->
+            <tr>
+                <td><h2>Death Moth</h2></td>
+                <td><img src="GIF/Death%20Moth/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Death%20Moth/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Death%20Moth/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Death%20Moth/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Death%20Moth/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Slime: Basic -->
+            <tr>
+                <td><h2>Slime: Basic</h2></td>
+                <td><img src="GIF/Slime%20Basic/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Basic/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Basic/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Basic/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Basic/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Slime: Fire -->
+            <tr>
+                <td><h2>Slime: Fire</h2></td>
+                <td><img src="GIF/Slime%20Fire/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Fire/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Fire/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Fire/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Fire/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Slime: Ice -->
+            <tr>
+                <td><h2>Slime: Ice</h2></td>
+                <td><img src="GIF/Slime%20Ice/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Ice/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Ice/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Ice/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Ice/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Slime: Poison -->
+            <tr>
+                <td><h2>Slime: Poison</h2></td>
+                <td><img src="GIF/Slime%20Poison/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Poison/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Poison/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Poison/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Poison/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Slime: Electric -->
+            <tr>
+                <td><h2>Slime: Electric</h2></td>
+                <td><img src="GIF/Slime%20Electric/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Electric/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Electric/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Electric/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Slime%20Electric/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Cultist -->
+            <tr>
+                <td><h2>Cultist</h2></td>
+                <td><img src="GIF/Cultist/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Cultist/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Cultist/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Cultist/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Cultist/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Mimic -->
+            <tr>
+                <td><h2>Mimic</h2></td>
+                <td><img src="GIF/Mimic/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Mimic/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Mimic/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Mimic/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Mimic/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Armored Skeleton -->
+            <tr>
+                <td><h2>Armored Skeleton</h2></td>
+                <td><img src="GIF/Armored%20Skeleton/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Armored%20Skeleton/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Armored%20Skeleton/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Armored%20Skeleton/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Armored%20Skeleton/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Electric Elemental -->
+            <tr>
+                <td><h2>Electric Elemental</h2></td>
+                <td><img src="GIF/Electric%20Elemental/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Electric%20Elemental/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Electric%20Elemental/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Electric%20Elemental/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Electric%20Elemental/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Skeleton Warior -->
+            <tr>
+                <td><h2>Skeleton Warrior</h2></td>
+                <td><img src="GIF/Skeleton%20Warior/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton%20Warior/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton%20Warior/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton%20Warior/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton%20Warior/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Skeleton Archer -->
+            <tr>
+                <td><h2>Skeleton Archer</h2></td>
+                <td><img src="GIF/Skeleton%20Archer/Idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton%20Archer/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Skeleton%20Archer/attack.gif" alt="Pending"/></td>
+                <td>
+                    <img src="GIF/Skeleton%20Archer/cast.gif" alt="Pending"/>
+                </td>
+                <td><img src="GIF/Skeleton%20Archer/Dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Bom -->
+            <tr>
+                <td><h2>Bom</h2></td>
+                <td><img src="GIF/Bom/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Bom/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Bom/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Bom/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Bom/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Goblin Cheif -->
+            <tr>
+                <td><h2>Goblin Chief</h2></td>
+                <td><img src="GIF/Goblin%20Cheif/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Cheif/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Cheif/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Cheif/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Cheif/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Goblin Grunt -->
+            <tr>
+                <td><h2>Goblin Grunt</h2></td>
+                <td><img src="GIF/Goblin%20Grunt/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Grunt/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Grunt/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Grunt/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Grunt/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Goblin Berserker -->
+            <tr>
+                <td><h2>Goblin Berserker</h2></td>
+                <td><img src="GIF/Goblin%20Berserker/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Berserker/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Berserker/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Berserker/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Berserker/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Goblin Brute -->
+            <tr>
+                <td><h2>Goblin Brute</h2></td>
+                <td><img src="GIF/Goblin%20Brute/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Brute/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Brute/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Brute/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Goblin%20Brute/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Giant Slime: Electric -->
+            <tr>
+                <td><h2>Giant Slime: Electric</h2></td>
+                <td>
+                    <img src="GIF/Giant%20Slime%20Electric/idle.gif" alt="Pending"/>
+                </td>
+                <td>
+                    <img src="GIF/Giant%20Slime%20Electric/hit.gif" alt="Pending"/>
+                </td>
+                <td>
+                    <img src="GIF/Giant%20Slime%20Electric/attack.gif" alt="Pending"/>
+                </td>
+                <td>
+                    <img src="GIF/Giant%20Slime%20Electric/cast.gif" alt="Pending"/>
+                </td>
+                <td>
+                    <img src="GIF/Giant%20Slime%20Electric/dead.gif" alt="Pending"/>
+                </td>
+            </tr>
+
+            <!-- ========================: Giant Slime: Basic -->
+            <tr>
+                <td><h2>Giant Slime: Basic</h2></td>
+                <td><img src="GIF/Giant%20Slime%20Basic/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Basic/hit.gif" alt="Pending"/></td>
+                <td>
+                    <img src="GIF/Giant%20Slime%20Basic/attack.gif" alt="Pending"/>
+                </td>
+                <td><img src="GIF/Giant%20Slime%20Basic/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Basic/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Giant Slime: Fire -->
+            <tr>
+                <td><h2>Giant Slime: Fire</h2></td>
+                <td><img src="GIF/Giant%20Slime%20Fire/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Fire/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Fire/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Fire/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Fire/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Giant Slime: Ice -->
+            <tr>
+                <td><h2>Giant Slime: Ice</h2></td>
+                <td><img src="GIF/Giant%20Slime%20Ice/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Ice/hit.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Ice/attack.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Ice/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Ice/dead.gif" alt="Pending"/></td>
+            </tr>
+
+            <!-- ========================: Giant Slime: Poison -->
+            <tr>
+                <td><h2>Giant Slime: Poison</h2></td>
+                <td><img src="GIF/Giant%20Slime%20Poison/idle.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Poison/hit.gif" alt="Pending"/></td>
+                <td>
+                    <img src="GIF/Giant%20Slime%20Poison/attack.gif" alt="Pending"/>
+                </td>
+                <td><img src="GIF/Giant%20Slime%20Poison/cast.gif" alt="Pending"/></td>
+                <td><img src="GIF/Giant%20Slime%20Poison/dead.gif" alt="Pending"/></td>
+            </tr>
+
+        </table>
+    </section>
+
+    <div id="preview-overlay" class="preview-overlay" aria-hidden="true">
+        <figure class="preview-box">
+            <img class="preview-img" src="" alt=""/>
+            <figcaption class="preview-caption"></figcaption>
+        </figure>
+    </div>
+</main>
+
+<script>
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabPanels = document.querySelectorAll(".tab-panel");
+
+    tabButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const target = btn.dataset.tab;
+            tabButtons.forEach((b) => b.classList.toggle("is-active", b === btn));
+            tabPanels.forEach((panel) => {
+                panel.classList.toggle("is-active", panel.id === "tab-" + target);
+            });
+            window.scrollTo({top: 0, behavior: "smooth"});
+        });
+    });
+
+    // ===== Hover-to-preview: dwell on a sprite → progress fills → card flies in =====
+    const overlay = document.getElementById("preview-overlay");
+    const previewBox = overlay.querySelector(".preview-box");
+    const previewImg = overlay.querySelector(".preview-img");
+    const previewCaption = overlay.querySelector(".preview-caption");
+    const DWELL_MS = 650;
+
+    // floating progress bar shown while hovering
+    const progress = document.createElement("div");
+    progress.className = "hover-progress";
+    progress.innerHTML = '<div class="hover-progress-bar"></div>';
+    document.body.appendChild(progress);
+    const progressBar = progress.querySelector(".hover-progress-bar");
+
+    let dwellTimer = null;
+    let cursorX = 0;
+    let cursorY = 0;
+
+    function captionFor(img) {
+        const card = img.closest(".icon-card");
+        if (card) return card.querySelector("figcaption")?.textContent.trim() || "";
+        const row = img.closest("tr");
+        const name = row?.querySelector("td:first-child h2")?.textContent.trim() || "";
+        const cell = img.closest("td");
+        let col = "";
+        if (cell && row) {
+            const idx = [...row.children].indexOf(cell);
+            const head = img.closest("table")?.querySelector("tr");
+            col = head?.children[idx]?.textContent.trim() || "";
+        }
+        return col ? name + " — " + col : name;
+    }
+
+    function placeProgress(img) {
+        const r = img.getBoundingClientRect();
+        progress.style.left = (r.left + r.width * 0.15) + "px";
+        progress.style.width = (r.width * 0.7) + "px";
+        progress.style.top = (r.bottom - 16) + "px";
+    }
+
+    function startDwell(img) {
+        cancelDwell();
+        placeProgress(img);
+        progress.classList.add("is-active");
+        progressBar.style.transition = "none";
+        progressBar.style.width = "0%";
+        void progressBar.offsetWidth; // reflow so the fill animates from 0
+        progressBar.style.transition = "width " + DWELL_MS + "ms linear";
+        progressBar.style.width = "100%";
+        dwellTimer = window.setTimeout(() => {
+            endDwell();
+            openPreviewFrom(img, cursorX, cursorY);
+        }, DWELL_MS);
+    }
+
+    function endDwell() {
+        progress.classList.remove("is-active");
+    }
+
+    function cancelDwell() {
+        if (dwellTimer) {
+            clearTimeout(dwellTimer);
+            dwellTimer = null;
+        }
+        endDwell();
+    }
+
+    function openPreviewFrom(img, startX, startY) {
+        previewImg.src = img.src;
+        previewCaption.textContent = captionFor(img);
+        overlay.classList.add("is-open");
+        overlay.setAttribute("aria-hidden", "false");
+
+        // FLIP: start at the cursor, sized like the hovered gif → glide to centered & full
+        const finalRect = previewImg.getBoundingClientRect();
+        const startW = img.getBoundingClientRect().width;
+        const scale = Math.max(0.06, startW / finalRect.width);
+        const finalCx = finalRect.left + finalRect.width / 2;
+        const finalCy = finalRect.top + finalRect.height / 2;
+        const dx = startX - finalCx;
+        const dy = startY - finalCy;
+        const midX = dx * 0.45;
+        const midY = dy * 0.45 - 70; // lift for an arc
+
+        previewBox.animate([
+            {transform: `translate(${dx}px, ${dy}px) scale(${scale})`, opacity: 0.25, offset: 0},
+            {transform: `translate(${midX}px, ${midY}px) scale(${(scale + 1) / 2})`, opacity: 0.9, offset: 0.6},
+            {transform: "translate(0px, 0px) scale(1)", opacity: 1, offset: 1}
+        ], {duration: 460, easing: "cubic-bezier(.22,.9,.3,1)"});
+    }
+
+    function hidePreview() {
+        overlay.classList.remove("is-open");
+        overlay.setAttribute("aria-hidden", "true");
+        previewImg.removeAttribute("src");
+    }
+
+    document.querySelectorAll(".tab-panel img").forEach((img) => {
+        img.addEventListener("pointerenter", (e) => {
+            cursorX = e.clientX;
+            cursorY = e.clientY;
+            if (e.pointerType === "mouse") startDwell(img);
+        });
+        img.addEventListener("pointermove", (e) => {
+            cursorX = e.clientX;
+            cursorY = e.clientY;
+        });
+        img.addEventListener("pointerleave", cancelDwell);
+        img.addEventListener("pointerdown", cancelDwell);
+        img.addEventListener("dragstart", (e) => e.preventDefault());
+    });
+
+    window.addEventListener("scroll", cancelDwell, true);
+
+    overlay.addEventListener("click", hidePreview);
+    overlay.addEventListener("contextmenu", (e) => e.preventDefault());
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") hidePreview();
+    });
+</script>
+</body>
 </html>

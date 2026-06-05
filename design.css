@@ -1,42 +1,427 @@
-﻿.Sortable {
-  display: flow-root;
-  align-items: center;
-  label {
-    margin-right: 10px;
-  }
+:root {
+    --bg: #f8f9fb;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --border-strong: #d1d5db;
+    --text: #222831;
+    --sub: #6b7280;
+    --accent: #2c98f0;
+    --accent-soft: rgba(44, 152, 240, 0.08);
+    --header-bg: #f5f7fa;
+    --header-hover: #edf2f7;
+    --sprite-bg: #808080;
+    --radius: 18px;
+    --shadow: 0 1px 2px rgba(16, 24, 40, 0.04),
+    0 10px 30px rgba(16, 24, 40, 0.07);
 }
 
-h2 {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.page-wrapper {
+    width: 100%;
+    padding: 28px clamp(16px, 3vw, 40px) 80px;
+}
+
+/* ===== Site header ===== */
+.site-header {
+    margin-bottom: 4px;
+}
+
+.site-header h1 {
+    font-size: clamp(26px, 4vw, 40px);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.site-sub {
+    margin-top: 4px;
+    color: var(--sub);
+    font-size: 15px;
+}
+
+/* ===== Tab bar ===== */
+.tabs {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    gap: 6px;
+    padding: 12px 0;
+    margin-bottom: 24px;
+    background: rgba(248, 249, 251, 0.85);
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.tab-btn {
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: var(--sub);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease,
+    transform 0.1s ease;
+}
+
+.tab-btn:hover {
+    color: var(--text);
+    background: var(--header-bg);
+}
+
+.tab-btn:active {
+    transform: translateY(1px);
+}
+
+.tab-btn.is-active {
+    color: #fff;
+    background: var(--accent);
+    box-shadow: 0 6px 16px rgba(44, 152, 240, 0.35);
+}
+
+/* ===== Tab panels ===== */
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.is-active {
+    display: block;
+    animation: panel-in 0.28s ease;
+}
+
+@keyframes panel-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* ===== Section titles (Player / NPC / UI / Enemy) ===== */
+.tab-panel > h2 {
+    font-size: clamp(20px, 2.6vw, 26px);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-align: left;
+    margin: 48px 0 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+}
+
+.tab-panel > h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 56px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--accent);
+}
+
+.tab-panel > h2:first-of-type {
+    margin-top: 8px;
+}
+
+/* ===== Table card ===== */
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 24px;
 }
 
+/* ===== Header row ===== */
 th {
-  width: 250px;
-  background-color: cadetblue;
-  padding: 10px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  border: 2px solid black;
+    background: var(--header-bg);
+    color: var(--sub);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
 }
 
+th:first-child {
+    width: clamp(120px, 14vw, 180px);
+}
+
+/* ===== Body cells ===== */
 td {
-  padding: 10px;
-  border: 2px solid black;
-  height: 250px;
-  text-align-last: center;
+    padding: 16px;
+    height: 230px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    /* subtle grid backdrop, like the CV animation viewer */
+    background-image: linear-gradient(rgba(34, 40, 49, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 40, 49, 0.03) 1px, transparent 1px);
+    background-size: 26px 26px;
+    transition: background-color 0.2s ease;
 }
 
-tr {
-  background-color: #808080;
+/* Sprite cells: solid grey to blend with the GIF's baked background */
+td:has(img) {
+    background-image: none;
+    background-color: var(--sprite-bg);
 }
 
+td:last-child {
+    border-right: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Character name cell */
+td:first-child {
+    background-image: none;
+    background: var(--card);
+    text-align: left;
+}
+
+td:first-child h2 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: var(--text);
+}
+
+/* Row hover highlight */
+table tr:hover td {
+    background-color: var(--accent-soft);
+}
+
+table tr:hover td:first-child {
+    background: var(--accent-soft);
+}
+
+table tr:hover td:has(img) {
+    background-color: var(--sprite-bg);
+}
+
+/* ===== Sprites ===== */
 img {
-  height: 250px;
+    /* scale down to fit the column so the row never overflows the screen */
+    max-width: 100%;
+    max-height: 250px;
+    height: auto;
+    width: auto;
+    /* keep pixel-art crisp instead of the browser's blurry smoothing */
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    transition: transform 0.18s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Empty / pending sprite placeholder */
+.pending {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    min-width: 80px;
+    padding: 0 12px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--sub);
+    background: var(--header-bg);
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+}
+
+/* ===== Icon grid (UI tab — single-idle icons) ===== */
+.section-note {
+    margin: -8px 0 18px;
+    color: var(--sub);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.icon-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.icon-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(16, 24, 40, 0.13);
+}
+
+.icon-card .thumb {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sprite-bg);
+}
+
+.icon-card .thumb img {
+    max-width: 92%;
+    max-height: 92%;
+}
+
+/* keep the card lift as the only hover motion here */
+.icon-card .thumb img:hover {
+    transform: none;
+}
+
+.icon-card figcaption {
+    padding: 12px 14px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    color: var(--text);
+}
+
+/* ===== Hover dwell progress bar ===== */
+.hover-progress {
+    position: fixed;
+    z-index: 90;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(17, 22, 29, 0.35);
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.12s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hover-progress.is-active {
+    opacity: 1;
+}
+
+.hover-progress-bar {
+    height: 100%;
+    width: 0;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--accent), #65b1ff);
+}
+
+/* ===== Hold-to-preview overlay ===== */
+.preview-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 4vmin;
+    background: rgba(17, 22, 29, 0.74);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    cursor: zoom-out;
+    user-select: none;
+}
+
+.preview-overlay.is-open {
+    display: flex;
+    animation: preview-in 0.16s ease;
+}
+
+@keyframes preview-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.preview-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.preview-img {
+    max-width: min(80vmin, 640px);
+    max-height: 80vmin;
+    width: auto;
+    height: auto;
+    padding: 28px;
+    background: var(--sprite-bg);
+    border-radius: 18px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    -webkit-user-drag: none;
+}
+
+.preview-img:hover {
+    transform: none;
+}
+
+.preview-caption {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+/* ===== Sortable helper (kept from original) ===== */
+.Sortable {
+    display: flow-root;
+    align-items: center;
+}
+
+.Sortable label {
+    margin-right: 10px;
+    color: var(--sub);
 }

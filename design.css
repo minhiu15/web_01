@@ -326,6 +326,18 @@ img:hover {
     color: var(--text);
 }
 
+/* ===== Performance: skip off-screen rendering/decoding ===== */
+#tab-enemy table tr,
+#tab-player table tr {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 262px;
+}
+
+.icon-card {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 360px;
+}
+
 /* ===== Hover dwell progress bar ===== */
 .hover-progress {
     position: fixed;
